@@ -2,11 +2,11 @@ import csv
 
 def convert_geoip_data(input_file, output_file):
     """
-    Открывает файл GeoIP-legacy.csv, преобразует строки и сохраняет результат в geo-country123.conf.
+    Открывает файл GeoIP-legacy.csv, преобразует строки и сохраняет результат в geo-country.conf.
 
     Args:
         input_file (str): Путь к входному файлу GeoIP-legacy.csv.
-        output_file (str): Путь к выходному файлу geo-country123.conf.
+        output_file (str): Путь к выходному файлу geo-country.conf.
     """
 
     try:
