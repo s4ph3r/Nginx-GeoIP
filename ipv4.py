@@ -15,7 +15,7 @@ def convert_geoip_data(input_file, output_file):
 
             reader = csv.reader(infile)
             for row in reader:
-                if len (row[1])<16:
+                if len (row[1])<16:    # Отсекаем IPv6 адреса
                     if len(row) == 6:  # Проверяем, что строка имеет правильную длину
                         ip_start = row[0]
                         ip_end = row[1]
